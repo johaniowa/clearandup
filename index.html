@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clear 'n Up | พื้นที่เรียนรู้ที่เข้าใจง่าย อบอุ่น และเป็นกันเอง</title>
+  <meta name="description" content="Clear 'n Up แพลตฟอร์มการเรียนรู้ออนไลน์แนวใหม่ เคลียร์ทุกจุดสงสัย อัปเกรดความมั่นใจ เรียนสนุก บรรยากาศอบอุ่นเป็นกันเองสไตล์พี่สอนน้อง">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Prompt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+  <!-- Phosphor Icons (Clean, minimal line icons) -->
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container announcement-inner">
+      <span class="badge-pill-warm">✨ เปิดเทอมนี้</span>
+      <p class="announcement-text">ทดลองเรียนฟรี 7 วัน พร้อมรับ <strong>Study Planner 2026</strong> ฟรีทันทีเมื่อสมัครวันนี้</p>
+      <a href="#trial-section" class="announcement-link">รับสิทธิ์เลย <i class="ph ph-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="container nav-wrapper">
+      <a href="#" class="brand-logo">
+        <div class="logo-mark">
+          <i class="ph-fill ph-sparkle"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Clear <span class="highlight-text">'n</span> Up</span>
+          <span class="brand-subtitle">Smart & Warm Learning</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <ul class="nav-list">
+          <li><a href="#why-us" class="nav-link">ทำไมต้องเรา</a></li>
+          <li><a href="#courses" class="nav-link">คอร์สเรียน</a></li>
+          <li><a href="#planner" class="nav-link">วางแผนเรียน</a></li>
+          <li><a href="#tutors" class="nav-link">พี่ติวเตอร์</a></li>
+          <li><a href="#reviews" class="nav-link">เสียงจากน้องๆ</a></li>
+          <li><a href="#faq" class="nav-link">คำถามพบบ่อย</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <button class="btn-ghost" id="loginBtn">เข้าสู่ระบบ</button>
+        <a href="#trial-section" class="btn-primary">
+          <span>ทดลองเรียนฟรี</span>
+          <i class="ph ph-arrow-up-right"></i>
+        </a>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="เปิดเมนู">
+          <i class="ph ph-list" id="menuIcon"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <ul class="mobile-nav-list">
+        <li><a href="#why-us" class="mobile-nav-link">ทำไมต้องเรา</a></li>
+        <li><a href="#courses" class="mobile-nav-link">คอร์สเรียนยอดนิยม</a></li>
+        <li><a href="#planner" class="mobile-nav-link">คำนวณแผนการเรียน</a></li>
+        <li><a href="#tutors" class="mobile-nav-link">ทีมพี่ติวเตอร์</a></li>
+        <li><a href="#reviews" class="mobile-nav-link">เสียงจากน้องๆ</a></li>
+        <li><a href="#faq" class="mobile-nav-link">คำถามที่พบบ่อย</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <button class="btn-ghost w-100" id="mobileLoginBtn">เข้าสู่ระบบ</button>
+        <a href="#trial-section" class="btn-primary w-100 mobile-cta-btn">
+          <span>เริ่มทดลองเรียนฟรี</span>
+          <i class="ph ph-arrow-up-right"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-blobs">
+        <div class="blob blob-blue"></div>
+        <div class="blob blob-warm"></div>
+        <div class="blob blob-light"></div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="tag-icon">🌿</span>
+            <span>เรียนรู้แบบอบอุ่น ไม่กดดัน เข้าใจได้จริง</span>
+          </div>
+
+          <h1 class="hero-title">
+            เคลียร์ทุกจุดสงสัย <br>
+            <span class="gradient-text">อัปเกรดเกรดอย่างมั่นใจ</span> <br>
+            ไปกับ Clear 'n Up
+          </h1>
+
+          <p class="hero-description">
+            เปลี่ยนบทเรียนที่ซับซ้อนให้ย่อยง่าย ด้วยหลักสูตรที่เข้าใจธรรมชาติของผู้เรียน 
+            บรรยากาศเป็นกันเองสไตล์พี่สอนน้อง พร้อมทีมพี่ติวเตอร์ดูแลตอบคำถามแบบตัวต่อตัวตลอด 24 ชม.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#trial-section" class="btn-primary btn-large">
+              <span>ทดลองเรียนฟรี 7 วัน</span>
+              <i class="ph ph-sparkle"></i>
+            </a>
+            <button class="btn-outline btn-large" id="watchVideoBtn">
+              <i class="ph-fill ph-play-circle play-icon"></i>
+              <span>ดูวิดีโอแนะนำ (1 นาที)</span>
+            </button>
+          </div>
+
+          <!-- Social Proof Bar in Hero -->
+          <div class="hero-proof">
+            <div class="avatar-stack">
+              <img src="assets/student-1.jpg" alt="นักเรียน Clear 'n Up" class="avatar-img">
+              <img src="assets/student-2.jpg" alt="นักเรียน Clear 'n Up" class="avatar-img">
+              <img src="assets/student-3.jpg" alt="นักเรียน Clear 'n Up" class="avatar-img">
+              <img src="assets/student-4.jpg" alt="นักเรียน Clear 'n Up" class="avatar-img">
+              <span class="avatar-counter">+15k</span>
+            </div>
+            <div class="proof-text">
+              <div class="rating-stars">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <span class="rating-score">4.9 / 5</span>
+              </div>
+              <p>นักเรียนกว่า 15,000+ คน ไว้วางใจอัปเกรดผลการเรียน</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Image & Floating Badges -->
+        <div class="hero-visual">
+          <div class="image-wrapper">
+            <img 
+              src="assets/hero-main.jpg" 
+              alt="บรรยากาศการเรียนที่อบอุ่นและมีสมาธิของ Clear 'n Up" 
+              class="hero-main-img"
+              loading="eager"
+            >
+            <div class="image-overlay-glow"></div>
+
+            <!-- Floating Badge 1: Top Right -->
+            <div class="floating-card float-top-right">
+              <div class="float-icon-box bg-warm-subtle">
+                <i class="ph-fill ph-chart-line-up"></i>
+              </div>
+              <div class="float-content">
+                <span class="float-label">คะแนนเฉลี่ยเพิ่มขึ้น</span>
+                <span class="float-value">+28.5% 📈</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge 2: Bottom Left -->
+            <div class="floating-card float-bottom-left">
+              <div class="float-icon-box bg-blue-subtle">
+                <i class="ph-fill ph-chats-circle"></i>
+              </div>
+              <div class="float-content">
+                <span class="float-label">พี่ติวเตอร์ตอบคำถาม</span>
+                <span class="float-value">เฉลี่ยใน 3 นาที ⚡</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge 3: Center Badge -->
+            <div class="floating-card float-badge-pill">
+              <span class="dot-live"></span>
+              <span>กำลังเรียนอยู่ 1,420 คนขณะนี้</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners / Trust Bar -->
+    <section class="trust-bar">
+      <div class="container">
+        <p class="trust-bar-label">ทีมผู้สอนและหลักสูตรมาตรฐานที่ได้รับความไว้วางใจจากสถาบันชั้นนำ</p>
+        <div class="trust-grid">
+          <div class="trust-item"><i class="ph ph-student"></i> <span>Chulalongkorn Alum</span></div>
+          <div class="trust-item"><i class="ph ph-chalkboard-teacher"></i> <span>Thammasat Faculty</span></div>
+          <div class="trust-item"><i class="ph ph-atom"></i> <span>Mahidol Scholars</span></div>
+          <div class="trust-item"><i class="ph ph-certificate"></i> <span>TCAS Verified 2026</span></div>
+          <div class="trust-item"><i class="ph ph-heart"></i> <span>98% พึงพอใจในความอบอุ่น</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Clear 'n Up Section (Value Proposition) -->
+    <section class="section-padding why-section" id="why-us">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-heading-pill">จุดเด่นของเรา</span>
+          <h2 class="section-title">เพราะการเรียนรู้ที่ดี <br><span class="highlight-blue">ไม่จำเป็นต้องเครียดและโดดเดี่ยว</span></h2>
+          <p class="section-subtitle">เราออกแบบทุกขั้นตอนให้เข้าใจง่าย นุ่มนวล และพร้อมสนับสนุนให้คุณเติบโตในแบบของตัวเอง</p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Card 1 -->
+          <div class="feature-card">
+            <div class="feature-icon bg-light-blue">
+              <i class="ph ph-lightbulb-filament"></i>
+            </div>
+            <h3 class="feature-title">Clear Concept</h3>
+            <p class="feature-desc">สรุปสาระสำคัญ ย่อยบทเรียนยากๆ ให้เห็นภาพเข้าใจง่ายใน 15 นาที ไม่ต้องท่องจำแบบไร้ทิศทาง</p>
+            <div class="feature-footer">
+              <span class="badge-feature">ย่อยง่ายตรงจุด</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="feature-card">
+            <div class="feature-icon bg-light-warm">
+              <i class="ph ph-users-three"></i>
+            </div>
+            <h3 class="feature-title">Warm Community</h3>
+            <p class="feature-desc">บรรยากาศแบบพี่สอนน้อง ไม่ดุ ไม่กดดัน ถามได้ทุกข้อสงสัยแม้จะเป็นเรื่องพื้นฐานที่สุด</p>
+            <div class="feature-footer">
+              <span class="badge-feature warm">เป็นกันเอง 100%</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="feature-card">
+            <div class="feature-icon bg-light-blue">
+              <i class="ph ph-clock-countdown"></i>
+            </div>
+            <h3 class="feature-title">Paced Learning</h3>
+            <p class="feature-desc">จัดตารางเรียนได้ตามสะดวกของน้องๆ ย้อนดูซ้ำได้ไม่อั้น พร้อมระบบบันทึกความเข้าใจเฉพาะบุคคล</p>
+            <div class="feature-footer">
+              <span class="badge-feature">อิสระทุกเวลา</span>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="feature-card">
+            <div class="feature-icon bg-light-warm">
+              <i class="ph ph-target"></i>
+            </div>
+            <h3 class="feature-title">Exam & Life Ready</h3>
+            <p class="feature-desc">คลังข้อสอบย้อนหลัง 10 ปี พร้อมเฉลยละเอียดแบบ Step-by-Step พร้อมต่อยอดสู่รั้วมหาวิทยาลัยในฝัน</p>
+            <div class="feature-footer">
+              <span class="badge-feature warm">มั่นใจทุกสนาม</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Section: Old Way vs Clear 'n Up -->
+    <section class="section-padding comparison-section">
+      <div class="container">
+        <div class="comparison-card">
+          <div class="comparison-header text-center">
+            <span class="sub-heading-pill">ความแตกต่างที่คุณจะสัมผัสได้</span>
+            <h2 class="section-title">เทียบชัดๆ ระหว่างการเรียนทั่วไป กับ Clear 'n Up</h2>
+          </div>
+
+          <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th class="col-topic">ประเด็นสำคัญ</th>
+                  <th class="col-traditional">การเรียนกวดวิชาแบบเดิม</th>
+                  <th class="col-clearup">✨ เรียนกับ Clear 'n Up</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="topic-title">บรรยากาศการเรียน</td>
+                  <td class="text-muted-row"><i class="ph ph-x-circle text-danger"></i> เคร่งเครียด กดดัน แข่งขันกัน</td>
+                  <td class="text-highlight-row"><i class="ph-fill ph-check-circle text-success"></i> อบอุ่น ผ่อนคลาย ให้กำลังใจตลอดทาง</td>
+                </tr>
+                <tr>
+                  <td class="topic-title">เมื่อมีข้อสงสัย</td>
+                  <td class="text-muted-row"><i class="ph ph-x-circle text-danger"></i> อาย ไม่กล้าถามครู หรือต้องรอรอบสัปดาห์ถัดไป</td>
+                  <td class="text-highlight-row"><i class="ph-fill ph-check-circle text-success"></i> ทักแชทถามพี่ติวเตอร์ส่วนตัวได้ทันที 24 ชม.</td>
+                </tr>
+                <tr>
+                  <td class="topic-title">การอธิบายเนื้อหา</td>
+                  <td class="text-muted-row"><i class="ph ph-x-circle text-danger"></i> เน้นสูตรลัด ท่องจำข้อสอบ แต่ไม่เข้าใจที่มา</td>
+                  <td class="text-highlight-row"><i class="ph-fill ph-check-circle text-success"></i> ปูพื้นฐานลึกซึ้ง เน้น Visual Thinking เห็นภาพชัดเจน</td>
+                </tr>
+                <tr>
+                  <td class="topic-title">การวัดผลและปรับแผน</td>
+                  <td class="text-muted-row"><i class="ph ph-x-circle text-danger"></i> วัดผลรวมห้อง ไม่มีใครดูแลจุดอ่อนรายคน</td>
+                  <td class="text-highlight-row"><i class="ph-fill ph-check-circle text-success"></i> วิเคราะห์จุดอ่อนเฉพาะจุด พร้อมแผนซ่อมแซมส่วนตัว</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Courses Section with Filtering -->
+    <section class="section-padding courses-section" id="courses">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-heading-pill">คอร์สเรียนยอดนิยม</span>
+          <h2 class="section-title">เลือกคอร์สที่ใช่ <span class="highlight-blue">ในระดับที่คุณต้องการ</span></h2>
+          <p class="section-subtitle">ทุกคอร์สดูแลด้วยความใส่ใจ มีเอกสารและสรุป Mind Map แจกฟรีครบทุกบท</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-tabs-wrapper">
+          <div class="filter-tabs" id="courseFilters">
+            <button class="filter-btn active" data-filter="all">ทั้งหมด</button>
+            <button class="filter-btn" data-filter="math">คณิตศาสตร์</button>
+            <button class="filter-btn" data-filter="science">วิทยาศาสตร์ & ฟิสิกส์</button>
+            <button class="filter-btn" data-filter="english">ภาษาอังกฤษ</button>
+            <button class="filter-btn" data-filter="tcas">ติวสอบเข้า TCAS</button>
+          </div>
+        </div>
+
+        <!-- Course Cards Grid -->
+        <div class="courses-grid" id="coursesGrid">
+
+          <!-- Course 1 -->
+          <div class="course-card" data-category="math">
+            <div class="course-img-box">
+              <img src="assets/course-math.jpg" alt="คอร์สคณิตศาสตร์ Clear 'n Up" class="course-img" loading="lazy">
+              <span class="badge-tag">ม.ปลาย • ยอดนิยม</span>
+              <button class="wishlist-btn" title="บันทึกคอร์ส"><i class="ph ph-heart"></i></button>
+            </div>
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="meta-item"><i class="ph ph-video"></i> 48 บทเรียน</span>
+                <span class="meta-item"><i class="ph ph-clock"></i> 32 ชม.</span>
+                <span class="meta-rating"><i class="ph-fill ph-star"></i> 4.95</span>
+              </div>
+              <h3 class="course-title">Clear Math: ปลดล็อกแคลคูลัสและสถิติให้เป็นเรื่องง่าย</h3>
+              <p class="course-desc">เรียนคณิตศาสตร์ด้วยภาพและเหตุผล เคลียร์ทุกสูตรยากให้กระจ่าง พร้อมข้อสอบ A-Level 6 ปีย้อนหลัง</p>
+              
+              <div class="course-tutor">
+                <img src="assets/tutor-praew.jpg" alt="พี่แพรว ติวเตอร์" class="tutor-avatar">
+                <div>
+                  <h4 class="tutor-name">พี่แพรว (วิศวะฯ จุฬาฯ)</h4>
+                  <span class="tutor-title">ผู้เชี่ยวชาญคณิตศาสตร์ ม.ปลาย</span>
+                </div>
+              </div>
+
+              <div class="course-footer">
+                <div class="course-pricing">
+                  <span class="price-discount">฿2,490</span>
+                  <span class="price-original">฿3,800</span>
+                </div>
+                <button class="btn-enroll" onclick="openEnrollModal('Clear Math: ปลดล็อกแคลคูลัสและสถิติ')">
+                  <span>ทดลองเรียน</span>
+                  <i class="ph ph-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course 2 -->
+          <div class="course-card" data-category="english">
+            <div class="course-img-box">
+              <img src="assets/course-english.jpg" alt="คอร์สภาษาอังกฤษ Clear 'n Up" class="course-img" loading="lazy">
+              <span class="badge-tag warm-tag">ม.ต้น - ม.ปลาย</span>
+              <button class="wishlist-btn" title="บันทึกคอร์ส"><i class="ph ph-heart"></i></button>
+            </div>
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="meta-item"><i class="ph ph-video"></i> 36 บทเรียน</span>
+                <span class="meta-item"><i class="ph ph-clock"></i> 26 ชม.</span>
+                <span class="meta-rating"><i class="ph-fill ph-star"></i> 4.98</span>
+              </div>
+              <h3 class="course-title">Warm English: แกรมม่าอบอุ่น ท่องศัพท์ไม่ลืมอีกต่อไป</h3>
+              <p class="course-desc">ปรับพื้นฐานอังกฤษตั้งแต่จุดเริ่มต้น อธิบายหลักภาษาด้วย Mind Map พร้อมเทคนิคเดาบริบทคำศัพท์</p>
+              
+              <div class="course-tutor">
+                <img src="assets/tutor-belle.jpg" alt="พี่เบลล์ ติวเตอร์" class="tutor-avatar">
+                <div>
+                  <h4 class="tutor-name">พี่เบลล์ (อักษรฯ จุฬาฯ)</h4>
+                  <span class="tutor-title">TOEIC 990 / IELTS 8.5</span>
+                </div>
+              </div>
+
+              <div class="course-footer">
+                <div class="course-pricing">
+                  <span class="price-discount">฿2,190</span>
+                  <span class="price-original">฿3,200</span>
+                </div>
+                <button class="btn-enroll" onclick="openEnrollModal('Warm English: แกรมม่าอบอุ่น ท่องศัพท์ไม่ลืม')">
+                  <span>ทดลองเรียน</span>
+                  <i class="ph ph-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course 3 -->
+          <div class="course-card" data-category="science">
+            <div class="course-img-box">
+              <img src="assets/course-science.jpg" alt="คอร์สฟิสิกส์และเคมี Clear 'n Up" class="course-img" loading="lazy">
+              <span class="badge-tag">ม.ปลาย • เจาะลึก</span>
+              <button class="wishlist-btn" title="บันทึกคอร์ส"><i class="ph ph-heart"></i></button>
+            </div>
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="meta-item"><i class="ph ph-video"></i> 52 บทเรียน</span>
+                <span class="meta-item"><i class="ph ph-clock"></i> 40 ชม.</span>
+                <span class="meta-rating"><i class="ph-fill ph-star"></i> 4.91</span>
+              </div>
+              <h3 class="course-title">Pure Physics & Chem: เปลี่ยนสูตรฟิสิกส์ให้เห็นภาพกลไก</h3>
+              <p class="course-desc">จำลองการทดลองเสมือนจริง อธิบายแรงและการเคลื่อนที่แบบเห็นภาพ ทำข้อสอบคำนวณได้อย่างมั่นใจ</p>
+              
+              <div class="course-tutor">
+                <img src="assets/tutor-kong.jpg" alt="พี่ก้อง ติวเตอร์" class="tutor-avatar">
+                <div>
+                  <h4 class="tutor-name">พี่ก้อง (แพทย์ศาสตร์ มหิดล)</h4>
+                  <span class="tutor-title">เหรียญทองฟิสิกส์โอลิมปิกระดับชาติ</span>
+                </div>
+              </div>
+
+              <div class="course-footer">
+                <div class="course-pricing">
+                  <span class="price-discount">฿2,690</span>
+                  <span class="price-original">฿4,200</span>
+                </div>
+                <button class="btn-enroll" onclick="openEnrollModal('Pure Physics & Chem: เปลี่ยนสูตรฟิสิกส์ให้เห็นภาพ')">
+                  <span>ทดลองเรียน</span>
+                  <i class="ph ph-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course 4 -->
+          <div class="course-card" data-category="tcas">
+            <div class="course-img-box">
+              <img src="assets/course-tcas.jpg" alt="คอร์สติวสอบ TCAS Clear 'n Up" class="course-img" loading="lazy">
+              <span class="badge-tag warm-tag">TCAS 2026 • แนะนำ</span>
+              <button class="wishlist-btn" title="บันทึกคอร์ส"><i class="ph ph-heart"></i></button>
+            </div>
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="meta-item"><i class="ph ph-video"></i> 64 บทเรียน</span>
+                <span class="meta-item"><i class="ph ph-clock"></i> 55 ชม.</span>
+                <span class="meta-rating"><i class="ph-fill ph-star"></i> 4.99</span>
+              </div>
+              <h3 class="course-title">TGAT & TPAT Mastery: วางยุทธศาสตร์พิชิตมหาลัยในฝัน</h3>
+              <p class="course-desc">เก็งประเด็นสำคัญ TGAT1, TGAT2, TGAT3 พร้อมแบบฝึกหัดจับเวลาเสมือนจริง และคำแนะนำจัดอันดับคณะ</p>
+              
+              <div class="course-tutor">
+                <img src="assets/tutor-tin.jpg" alt="พี่ติน ติวเตอร์" class="tutor-avatar">
+                <div>
+                  <h4 class="tutor-name">พี่ติน & ทีมโค้ชแนะแนว</h4>
+                  <span class="tutor-title">อดีตอันดับ 1 ประเทศสอบเข้า มธ.</span>
+                </div>
+              </div>
+
+              <div class="course-footer">
+                <div class="course-pricing">
+                  <span class="price-discount">฿2,990</span>
+                  <span class="price-original">฿4,900</span>
+                </div>
+                <button class="btn-enroll" onclick="openEnrollModal('TGAT & TPAT Mastery: วางยุทธศาสตร์พิชิตมหาลัย')">
+                  <span>ทดลองเรียน</span>
+                  <i class="ph ph-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+          <p class="text-muted mb-3">ต้องการคำแนะนำว่าควรเริ่มจากคอร์สไหน?</p>
+          <a href="#trial-section" class="btn-outline">
+            <i class="ph ph-chat-teardrop-dots"></i>
+            <span>ปรึกษาพี่แนะแนวเพื่อจัดแผนเรียนส่วนตัว (ฟรี)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Study Planner Calculator Widget -->
+    <section class="section-padding planner-section" id="planner">
+      <div class="container">
+        <div class="planner-box">
+          <div class="planner-header text-center">
+            <span class="badge-pill-warm">✨ เครื่องมือวางแผนส่วนตัว</span>
+            <h2 class="section-title">ลองคำนวณแผนการเรียนของคุณ</h2>
+            <p class="section-subtitle">เลือกเป้าหมายและเวลาว่างที่คุณมี ระบบจะช่วยแนะนำรูปแบบการเรียนและแนวโน้มความสำเร็จ</p>
+          </div>
+
+          <div class="planner-interactive-grid">
+            <!-- Planner Inputs -->
+            <div class="planner-controls">
+              <!-- Step 1: Grade Level -->
+              <div class="control-group">
+                <label class="control-label"><i class="ph ph-graduation-cap"></i> ระดับการศึกษาปัจจุบัน</label>
+                <div class="pill-selector" id="levelSelector">
+                  <button type="button" class="pill-btn" data-value="junior">ม.ต้น (ม.1-3)</button>
+                  <button type="button" class="pill-btn active" data-value="senior">ม.ปลาย (ม.4-5)</button>
+                  <button type="button" class="pill-btn" data-value="tcas">ม.6 / ติวสอบเข้า</button>
+                </div>
+              </div>
+
+              <!-- Step 2: Goal -->
+              <div class="control-group">
+                <label class="control-label"><i class="ph ph-flag"></i> เป้าหมายสำคัญของคุณ</label>
+                <div class="pill-selector" id="goalSelector">
+                  <button type="button" class="pill-btn active" data-value="boost">เพิ่มเกรดเฉลี่ย (GPAX 3.5+)</button>
+                  <button type="button" class="pill-btn" data-value="exam">สอบติดคณะในฝัน TCAS</button>
+                  <button type="button" class="pill-btn" data-value="basic">ปูพื้นฐานใหม่ให้แน่น</button>
+                </div>
+              </div>
+
+              <!-- Step 3: Hours Slider -->
+              <div class="control-group">
+                <div class="slider-header">
+                  <label class="control-label" for="hoursSlider"><i class="ph ph-hourglass-high"></i> เวลาเรียนต่อสัปดาห์</label>
+                  <span class="slider-value-badge" id="sliderDisplay">5 ชั่วโมง / สัปดาห์</span>
+                </div>
+                <input type="range" min="2" max="15" value="5" step="1" id="hoursSlider" class="custom-range">
+                <div class="slider-ticks">
+                  <span>สบายๆ (2 ชม.)</span>
+                  <span>กำลังพอดี (6 ชม.)</span>
+                  <span>เข้มข้น (15 ชม.)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Planner Output Result Card -->
+            <div class="planner-result-card">
+              <div class="result-header">
+                <span class="result-tag">💡 แผนแนะนำเฉพาะคุณ</span>
+                <h3 class="result-title" id="planTitle">แผน Steady Growth (ค่อยๆ เคลียร์แต่โตไว)</h3>
+              </div>
+
+              <div class="result-metrics">
+                <div class="metric-item">
+                  <span class="metric-num" id="estimatedWeeks">8 สัปดาห์</span>
+                  <span class="metric-label">ระยะเวลาเห็นผลชัดเจน</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-num highlight-stat" id="expectedImprovement">+0.6 GPA</span>
+                  <span class="metric-label">การคาดการณ์พัฒนาการ</span>
+                </div>
+              </div>
+
+              <div class="result-checklist">
+                <div class="check-item">
+                  <i class="ph-fill ph-check-circle"></i>
+                  <span id="planCheck1">แบ่งบทเรียนย่อย 30 นาที/วัน ไม่สะสมความล้า</span>
+                </div>
+                <div class="check-item">
+                  <i class="ph-fill ph-check-circle"></i>
+                  <span id="planCheck2">มีพี่โค้ชคอยเช็คการบ้านและส่งข้อความเตือนอย่างอบอุ่น</span>
+                </div>
+                <div class="check-item">
+                  <i class="ph-fill ph-check-circle"></i>
+                  <span id="planCheck3">ทำ Mock Exam วัดความแม่นยำทุกๆ 2 สัปดาห์</span>
+                </div>
+              </div>
+
+              <a href="#trial-section" class="btn-primary w-100 text-center mt-4">
+                <span>บันทึกแผนและเริ่มทดลองเรียน</span>
+                <i class="ph ph-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Warm Mentors / Tutors Section -->
+    <section class="section-padding tutors-section" id="tutors">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-heading-pill">ทีมพี่ติวเตอร์</span>
+          <h2 class="section-title">เรียนกับคนที่เข้าใจน้องที่สุด <br><span class="highlight-blue">ผู้เชี่ยวชาญที่มีหัวใจอบอุ่น</span></h2>
+          <p class="section-subtitle">พี่ๆ ทุกคนผ่านการคัดเลือกทั้งด้านความรู้ ทักษะการถ่ายทอด และจิตวิทยาวัยรุ่น</p>
+        </div>
+
+        <div class="tutors-grid">
+          <!-- Tutor 1 -->
+          <div class="tutor-card">
+            <div class="tutor-img-container">
+              <img src="assets/tutor-belle.jpg" alt="พี่เบลล์ ติวเตอร์ภาษาอังกฤษ" class="tutor-card-img" loading="lazy">
+              <span class="badge-exp">เกียรตินิยมอันดับ 1</span>
+            </div>
+            <div class="tutor-info">
+              <h3 class="tutor-card-name">พี่เบลล์ — ชนกนันท์</h3>
+              <p class="tutor-sub">อักษรศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</p>
+              <p class="tutor-quote">“ภาษาอังกฤษไม่ใช่เรื่องของการท่องกฎ แต่คือการเปิดประตูสู่โลกกว้าง มาเรียนอย่างมีความสุขไปด้วยกันนะคะ”</p>
+              <div class="tutor-tags">
+                <span>English</span>
+                <span>TGAT1</span>
+                <span>IELTS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tutor 2 -->
+          <div class="tutor-card">
+            <div class="tutor-img-container">
+              <img src="assets/tutor-kong.jpg" alt="พี่ก้อง ติวเตอร์ฟิสิกส์" class="tutor-card-img" loading="lazy">
+              <span class="badge-exp">เหรียญทองฟิสิกส์</span>
+            </div>
+            <div class="tutor-info">
+              <h3 class="tutor-card-name">พี่ก้อง — ภัทรพล</h3>
+              <p class="tutor-sub">แพทยศาสตร์ศิริราชพยาบาล ม.มหิดล</p>
+              <p class="tutor-quote">“ฟิสิกส์ไม่น่ากลัวอย่างที่คิดครับ ถ้าน้องมองเห็นภาพจริง ทุกอย่างมีเหตุผลอธิบายได้เสมอ”</p>
+              <div class="tutor-tags">
+                <span>Physics</span>
+                <span>TPAT3</span>
+                <span>Science</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tutor 3 -->
+          <div class="tutor-card">
+            <div class="tutor-img-container">
+              <img src="assets/tutor-praew.jpg" alt="พี่แพรว ติวเตอร์คณิตศาสตร์" class="tutor-card-img" loading="lazy">
+              <span class="badge-exp">ติวเตอร์ยอดนิยม</span>
+            </div>
+            <div class="tutor-info">
+              <h3 class="tutor-card-name">พี่แพรว — ศิริพร</h3>
+              <p class="tutor-sub">วิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</p>
+              <p class="tutor-quote">“พี่จะไม่บอกแค่คำตอบ แต่จะสอนวิธีคิดที่น้องสามารถหยิบไปใช้แก้โจทย์ทุกข้อได้ด้วยตัวเองค่ะ”</p>
+              <div class="tutor-tags">
+                <span>Mathematics</span>
+                <span>A-Level</span>
+                <span>Calculus</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials / Student Voices -->
+    <section class="section-padding reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-heading-pill">ความรู้สึกจริงจากผู้เรียน</span>
+          <h2 class="section-title">เรื่องเล่าความสำเร็จ <br><span class="highlight-blue">ที่เริ่มต้นจากห้องเรียนอบอุ่น</span></h2>
+          <p class="section-subtitle">เพราะความมั่นใจสร้างได้ เมื่อเราได้เรียนในบรรยากาศที่ปลอดภัยและเป็นกันเอง</p>
+        </div>
+
+        <div class="reviews-slider-grid">
+          <!-- Review 1 -->
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+            </div>
+            <p class="review-text">
+              “หนูเคยเกลียดคณิตมาก ทำข้อสอบทีไรน้ำตาจะไหล แต่พอมาเรียนกับ Clear 'n Up พี่แพรวอธิบายใจเย็นมาก ไม่เคยดุเลยเวลาถามซ้ำ ตอนนี้สอบกลางภาคได้คะแนนท็อปของห้องแล้วค่ะ ดีใจมากๆ”
+            </p>
+            <div class="review-author">
+              <img src="assets/review-mint.jpg" alt="น้องมิ้นท์" class="author-avatar">
+              <div>
+                <h4 class="author-name">น้องมิ้นท์ (ม.5)</h4>
+                <span class="author-school">เตรียมอุดมศึกษาพัฒนาการ</span>
+                <span class="author-badge">เกรดคณิตจาก 2.0 ➔ 4.0</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-card highlight-border">
+            <div class="review-stars">
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+            </div>
+            <p class="review-text">
+              “ชอบระบบทักแชทถามการบ้านดึกๆ มากครับ บางทีตี 1 อ่านหนังสือติดข้อสงสัย ส่งรูปไป พี่ติวเตอร์ยังตอบละเอียดส่งคลิปสั้นอธิบายกลับมา คุ้มค่าที่สุดเท่าที่เคยเรียนพิเศษมาเลย”
+            </p>
+            <div class="review-author">
+              <img src="assets/review-phu.jpg" alt="น้องภู" class="author-avatar">
+              <div>
+                <h4 class="author-name">น้องภู (ม.6)</h4>
+                <span class="author-school">สวนกุหลาบวิทยาลัย</span>
+                <span class="author-badge">สอบติดวิศวะฯ จุฬาฯ รอบ 3</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+            </div>
+            <p class="review-text">
+              “สไลด์เรียนน่ารัก สะอาดตา โทนสีสบายตามากค่ะ เรียนแล้วไม่ปวดตา หนังสือสรุปที่ส่งมาถึงบ้านก็น่ารักจนอยากหยิบขึ้นมาเปิดอ่านทุกวัน แนะนำเพื่อนๆ ทุกคนเลยค่ะ”
+            </p>
+            <div class="review-author">
+              <img src="assets/review-ploy.jpg" alt="น้องพลอย" class="author-avatar">
+              <div>
+                <h4 class="author-name">น้องพลอย (ม.4)</h4>
+                <span class="author-school">สาธิต มศว ประสานมิตร</span>
+                <span class="author-badge">GPA รวมเทอมล่าสุด 3.92</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding faq-section" id="faq">
+      <div class="container faq-container">
+        <div class="section-header text-center">
+          <span class="sub-heading-pill">มีคำถามใช่ไหม?</span>
+          <h2 class="section-title">คำถามที่พบบ่อย</h2>
+          <p class="section-subtitle">เคลียร์ทุกข้อสงสัยเกี่ยวกับการเรียนและการใช้งาน Clear 'n Up</p>
+        </div>
+
+        <div class="faq-accordion" id="faqAccordion">
+          <!-- Item 1 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>ทดลองเรียนฟรี 7 วัน ต้องผูกบัตรเครดิตก่อนหรือไม่?</span>
+              <i class="ph ph-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>ไม่ต้องผูกบัตรเครดิตหรือชำระเงินใดๆ ทั้งสิ้นครับ น้องๆ สามารถลงทะเบียนด้วยอีเมลหรือเบอร์โทรศัพท์ แล้วเริ่มเข้าเรียนคอร์สทดลองได้ทันที ไม่มีค่าใช้จ่ายแอบแฝงแน่นอน</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>ถ้าไม่มีพื้นฐานเลย จะเรียนทันเพื่อนไหม?</span>
+              <i class="ph ph-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>เรียนทันแน่นอนครับ คอร์สของเราเน้น "Clear Concept" ปูพื้นฐานตั้งแต่ศูนย์ และจัดทำเป็นบทเรียนสั้นๆ 15-20 นาที อีกทั้งยังมีพี่ติวเตอร์ส่วนตัวช่วยแนะนำจุดที่น้องยังติดขัดแบบตัวต่อตัวครับ</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>สามารถดูบทเรียนย้อนหลังได้ตลอดเวลาไหม?</span>
+              <i class="ph ph-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>ดูได้ไม่จำกัดจำนวนครั้งตลอดอายุคอร์สครับ สามารถปรับความเร็ววิดีโอ (0.75x - 2.0x) และเรียนได้ทั้งบนคอมพิวเตอร์ แท็บเล็ต หรือสมาร์ตโฟน สะดวกสบายทุกที่ทุกเวลา</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>เอกสารประกอบการเรียนและสรุปมีจัดส่งให้ไหม?</span>
+              <i class="ph ph-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>มีทั้งแบบไฟล์ PDF คุณภาพสูงให้ดาวน์โหลดทันที และสามารถเลือกรับเป็นเล่มหนังสือสรุปภาพสี ปกเคลือบพิเศษ สไตล์มินิมอลจัดส่งฟรีตรงถึงบ้านทั่วประเทศครับ</p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>หากมีคำถามเกี่ยวกับการบ้านโรงเรียน สามารถถามพี่ติวเตอร์ได้ไหม?</span>
+              <i class="ph ph-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>ถามได้เลยครับ! ในระบบจะมีห้องแชท "Ask Tutor" น้องๆ สามารถถ่ายรูปโจทย์การบ้านหรือข้อสอบส่งเข้ามา พี่ติวเตอร์จะเข้ามาตอบและแนะวิธีคิดให้แบบ Step-by-Step ครับ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Warm Final CTA / Trial Form Section -->
+    <section class="section-padding trial-section" id="trial-section">
+      <div class="container">
+        <div class="trial-card">
+          <div class="trial-grid">
+            <div class="trial-info">
+              <span class="badge-pill-warm">เริ่มต้นก้าวแรกอย่างมั่นใจ</span>
+              <h2 class="trial-title">พร้อมจะเคลียร์ความไม่เข้าใจ <br>แล้วอัปเกรดเกรดไปกับเราหรือยัง?</h2>
+              <p class="trial-desc">
+                ลงทะเบียนรับสิทธิ์เข้าเรียนฟรี 7 วัน พร้อมรับ <strong>Study Planner & Summary Sheet</strong> เล่มพิเศษส่งตรงถึงอีเมลคุณทันที
+              </p>
+
+              <div class="trial-benefits">
+                <div class="benefit-item">
+                  <i class="ph-fill ph-check-circle"></i>
+                  <span>เข้าถึงวิดีโอสอนกว่า 100+ ชั่วโมงฟรี</span>
+                </div>
+                <div class="benefit-item">
+                  <i class="ph-fill ph-check-circle"></i>
+                  <span>ทดลองถาม-ตอบกับพี่ติวเตอร์ 1-on-1</span>
+                </div>
+                <div class="benefit-item">
+                  <i class="ph-fill ph-check-circle"></i>
+                  <span>ไม่มีข้อผูกมัด ยกเลิกได้ตลอดเวลา</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="trial-form-box">
+              <div class="form-header">
+                <h3>สมัครทดลองเรียนฟรี</h3>
+                <p>กรอกข้อมูลสั้นๆ ไม่เกิน 30 วินาที</p>
+              </div>
+
+              <form id="trialForm" class="trial-form">
+                <div class="form-group">
+                  <label for="studentName">ชื่อ-นามสกุล หรือชื่อเล่น</label>
+                  <input type="text" id="studentName" placeholder="เช่น น้องฟ้าใส หรือ ณัฐวุฒิ" required>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="studentTel">เบอร์โทรศัพท์</label>
+                    <input type="tel" id="studentTel" placeholder="08x-xxx-xxxx" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="studentLevel">ระดับชั้น</label>
+                    <select id="studentLevel" required>
+                      <option value="">เลือกระดับชั้น</option>
+                      <option value="m1-3">มัธยมศึกษาตอนต้น (ม.1-3)</option>
+                      <option value="m4-5">มัธยมศึกษาตอนปลาย (ม.4-5)</option>
+                      <option value="m6">ม.6 / เตรียมสอบ TCAS</option>
+                      <option value="uni">มหาวิทยาลัย / บุคคลทั่วไป</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="studentEmail">อีเมล (สำหรับรับรหัสเข้าเรียนและชีทสรุป)</label>
+                  <input type="email" id="studentEmail" placeholder="yourname@gmail.com" required>
+                </div>
+
+                <button type="submit" class="btn-primary w-100 btn-large">
+                  <span>เริ่มเรียนฟรีทันที 7 วัน</span>
+                  <i class="ph ph-sparkle"></i>
+                </button>
+
+                <p class="form-privacy">
+                  <i class="ph ph-shield-check"></i> ข้อมูลของคุณปลอดภัย เราเคารพความเป็นส่วนตัว 100%
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Video Modal -->
+  <div class="modal-backdrop" id="videoModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="badge-pill-warm">วิดีโอแนะนำ</span>
+          <h3>เปิดประสบการณ์เรียนรู้กับ Clear 'n Up</h3>
+        </div>
+        <button class="modal-close" id="closeVideoModal" aria-label="ปิด"><i class="ph ph-x"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="video-container">
+          <!-- Clean mock video presentation / aesthetic visual -->
+          <div class="video-mockup">
+            <img src="assets/video-cover.jpg" alt="บรรยากาศการเรียน" class="video-bg-img">
+            <div class="video-overlay">
+              <div class="play-pulse">
+                <i class="ph-fill ph-play"></i>
+              </div>
+              <p class="video-caption">“เรียนอย่างเข้าใจ อบอุ่น และสนุกไปด้วยกัน”</p>
+              <span class="video-duration">ความยาว 1:18 นาที</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer-info">
+          <p>พบกับเคล็ดลับการเรียนรู้แบบฉบับ Clear 'n Up ที่ช่วยให้น้องๆ กว่า 15,000 คนเข้าใจบทเรียนเร็วขึ้น 2 เท่า</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Course Enrollment / Consultation Modal -->
+  <div class="modal-backdrop" id="enrollModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="badge-pill-warm">ทดลองเรียนคอร์สนี้</span>
+          <h3 id="modalCourseTitle">ชื่อคอร์สเรียน</h3>
+        </div>
+        <button class="modal-close" id="closeEnrollModal" aria-label="ปิด"><i class="ph ph-x"></i></button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-lead">ยินดีต้อนรับสู่คอร์สเรียน! กรอกข้อมูลเพื่อรับสิทธิ์ดูบทเรียนแรกฟรี พร้อมดาวน์โหลดเอกสารประกอบการเรียนได้ทันที</p>
+        <form id="enrollForm" class="trial-form mt-3">
+          <div class="form-group">
+            <label for="enrollName">ชื่อเล่นของคุณ</label>
+            <input type="text" id="enrollName" placeholder="เช่น น้องฟ้า หรือ ตินติน" required>
+          </div>
+          <div class="form-group">
+            <label for="enrollEmail">อีเมลสำหรับส่งสิทธิ์เข้าชม</label>
+            <input type="email" id="enrollEmail" placeholder="youremail@example.com" required>
+          </div>
+          <button type="submit" class="btn-primary w-100">
+            <span>เข้าดูบทเรียนฟรีทันที</span>
+            <i class="ph ph-play"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast">
+    <div class="toast-icon"><i class="ph-fill ph-check-circle"></i></div>
+    <div class="toast-content">
+      <span class="toast-title" id="toastTitle">สำเร็จ!</span>
+      <span class="toast-message" id="toastMessage">เราได้รับข้อมูลของคุณแล้ว</span>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="brand-logo footer-logo">
+            <div class="logo-mark">
+              <i class="ph-fill ph-sparkle"></i>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title">Clear <span class="highlight-text">'n</span> Up</span>
+              <span class="brand-subtitle">Smart & Warm Learning</span>
+            </div>
+          </a>
+          <p class="footer-bio">
+            พื้นที่การเรียนรู้ออนไลน์ที่มุ่งมั่นเปลี่ยนเรื่องยากให้เข้าใจง่าย 
+            ผ่านบรรยากาศการเรียนที่อบอุ่น อ่อนโยน และเสริมสร้างความมั่นใจให้ผู้เรียนทุกคน
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook" class="social-btn"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#" aria-label="Instagram" class="social-btn"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#" aria-label="Tiktok" class="social-btn"><i class="ph ph-tiktok-logo"></i></a>
+            <a href="#" aria-label="Youtube" class="social-btn"><i class="ph ph-youtube-logo"></i></a>
+            <a href="#" aria-label="Line Official" class="social-btn"><i class="ph ph-chat-circle-dots"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <h4 class="col-heading">คอร์สเรียน</h4>
+            <ul class="col-list">
+              <li><a href="#courses">คณิตศาสตร์ ม.ปลาย</a></li>
+              <li><a href="#courses">ภาษาอังกฤษ Warm English</a></li>
+              <li><a href="#courses">ฟิสิกส์ & เคมี เพื่อสอบเข้า</a></li>
+              <li><a href="#courses">ติวเข้ม TGAT / TPAT</a></li>
+              <li><a href="#courses">คอร์สปรับพื้นฐาน ม.ต้น</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="col-heading">เกี่ยวกับเรา</h4>
+            <ul class="col-list">
+              <li><a href="#why-us">ทำไมต้อง Clear 'n Up</a></li>
+              <li><a href="#tutors">ทีมพี่ติวเตอร์</a></li>
+              <li><a href="#reviews">รีวิวจากน้องๆ และผู้ปกครอง</a></li>
+              <li><a href="#planner">เครื่องมือวางแผนการเรียน</a></li>
+              <li><a href="#">ร่วมงานกับเรา (ติวเตอร์)</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="col-heading">ติดต่อเรา</h4>
+            <ul class="col-list contact-list">
+              <li><i class="ph ph-envelope-simple"></i> contact@clearnup.edu</li>
+              <li><i class="ph ph-phone"></i> 02-123-4567</li>
+              <li><i class="ph ph-chat-centered-dots"></i> LINE: @clearnup</li>
+              <li><i class="ph ph-map-pin"></i> อาคาร Knowledge Tower ชั้น 14 กรุงเทพฯ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 Clear 'n Up Education Co., Ltd. สงวนลิขสิทธิ์ทุกประการ</p>
+        <div class="footer-legal">
+          <a href="#">นโยบายความเป็นส่วนตัว</a>
+          <span>•</span>
+          <a href="#">ข้อตกลงการใช้งาน</a>
+          <span>•</span>
+          <a href="#">ศูนย์ช่วยเหลือ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
